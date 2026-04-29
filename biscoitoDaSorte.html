@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página inicial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bem Vindo!</h1>
+    <p>ESCOLHA UM BISCOITO DA SORTE!</p>
+
+    <div class="saudacao"></div>
+
+    <button onclick="mudarnome(this)" id="botao1"> Biscoito 1</button>
+    <button onclick="mudarnome(this)" id="botao2"> Biscoito 2</button>
+    <button onclick="mudarnome(this)" id="botao3"> Biscoito 3</button>
+    <button onclick="mudarnome(this)" id="botao4"> Biscoito 4</button>
+    <button onclick="location.reload()">Voltar</button>
+   
+    
+
+    
+
+    </div>
+    
+
+
+
+    <script>
+        function mudarnome(botao){
+            if (botao.id == "botao1"){
+
+        document.getElementById("botao2").disabled = true;
+        document.getElementById("botao3").disabled = true;
+        document.getElementById("botao4").disabled = true;
+            botao.textContent = "voce nao ganhou 100 reais"
+            }
+
+            else if (botao.id == "botao2") {
+            document.getElementById("botao1").disabled = true;
+            document.getElementById("botao3").disabled = true;
+            document.getElementById("botao4").disabled = true;
+        botao.textContent = "Você ganhou um ingresso";
+            }
+
+
+             else if (botao.id == "botao3") {
+            document.getElementById("botao1").disabled = true;
+            document.getElementById("botao2").disabled = true;
+            document.getElementById("botao4").disabled = true;
+
+        botao.textContent = "Você ganhou um beijo";
+            }
+
+
+
+
+             else if (botao.id == "botao4") {
+                document.getElementById("botao1").disabled = true;
+                document.getElementById("botao2").disabled = true;
+                document.getElementById("botao3").disabled = true;
+        botao.textContent = "Você nao ganhou nada hahaha, aperte voltar e tente novamente";
+            }
+
+            
+            
+       
+       
+       
+       
+       
+        }
+        
+
+    </script>
+   
+    
+
+
+
+</body>
+</html>
