@@ -1,0 +1,73 @@
+public class Carro {
+//criei os objetos em que vou manipular no main
+    String marca;
+    String modelo;
+    int ano;
+
+        public Carro(String marca, String modelo, int ano) {
+
+            this.marca = marca;
+            this.modelo = modelo;
+            this.ano = ano;
+
+
+
+        }
+
+
+
+
+
+    public void acelerar(){
+
+        System.out.println("vrummmmm");
+
+    }
+//criei um metodo para mostrar as informaçoes 
+    public void mostrarInformacoes(){
+
+        System.out.println("O carro é " + marca + " o modelo é " + modelo + " e o ano é " + ano);
+
+    }
+
+
+
+
+
+    public static void main(String[] args) {
+        
+
+
+        Carro c1 = new Carro("claudio", "fox", 2004);
+
+        
+        
+        
+
+        c1.acelerar();
+        c1.mostrarInformacoes();
+
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
